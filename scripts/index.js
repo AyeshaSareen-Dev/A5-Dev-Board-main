@@ -2,7 +2,7 @@
 const discoverNewDiv = document.getElementById('discover-new-div');
 
 discoverNewDiv.addEventListener('click', function(){
-    window.location.href = "/";
+    window.location.href = "../blog.html";
 });
 
 const buttons = document.querySelectorAll('.completed-btn');
