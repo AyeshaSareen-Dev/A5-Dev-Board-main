@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="bg-slate-100 p-4">
+    <section id="nav-bar">
+        <div class="bg-white flex justify-between items-center p-4 rounded-2xl mb-4">
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-4xl ">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="back-to-homepage-btn" class="btn bg-blue-600 text-white">Back to Desk</button>
+            </div>
+        </div>
+    </section>
+<main>
+    <section>
+        <div class="flex flex-col gap-4">
+            <h2 class="text-3xl font-bold text-center">Blogs</h2>
+            <div class="bg-white p-3 rounded-2xl space-y-3">
+                <h3 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="border-2 border-dashed">
+                <p class="text-gray-500">
+                    There are different ways to select an element in the DOM. For example: <br>
+                    1. document.getElementById('element-id'). <br>
+                    2. document.getElementsByClassName('class-name'). <br>
+                    3. document.getElementsByTagName('tag-name'). <br>
+                    4. document.querySelector('selector'). <br>
+                    5. document.querySelectorAll('selector').
+                </p>
+            </div>
+            <div class="bg-white p-3 rounded-2xl space-y-3">
+                <h3 class="text-2xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                <hr class="border-2 border-dashed">
+                <p class="text-gray-500">
+                    1. innerHTML: When we use the innerHTML property, it reads both the HTML markup and the text content of the element. <br>
+                    2. innerText: When we use the innerText property, it reads only the text content of the element. <br>
+                    3. textContent: When we use the textContent property, it ignores all HTML tags and returns only the text. It reads text as it is in the markup. It also returns all text, whether it's rendered on screen or not. Also, textContent only deals with the raw text and doesn't account for styles.
+                </p>
+            </div>
+            <div class="bg-white p-3 rounded-2xl space-y-3">
+                <h3 class="text-2xl font-semibold">Question-3: What is event delegation in the DOM?</h3>
+                <hr class="border-2 border-dashed">
+                <p class="text-gray-500">In DOM, "event delegation" is a technique where we attach a single event listener to a parent element, allowing it to handle events triggered on its child elements, instead of adding separate listeners to each child element.</p>
+            </div>
+            <div class="bg-white p-3 rounded-2xl space-y-3">
+                <h3 class="text-2xl font-semibold">Question-4: What is event bubbling in the DOM?</h3>
+                <hr class="border-2 border-dashed">
+                <p class="text-gray-500">In DOM, "event bubbling" is the process where when an event occurs on an element, it triggers not only on that element but also on its parent elements in the DOM hierarchy.</p>
+            </div>
+            <div class="bg-white p-3 rounded-2xl space-y-3">
+                <h3 class="text-2xl font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <hr class="border-2 border-dashed">
+                <p class="text-gray-500">
+                    1. To create a new element, we can use the document.createElement() method. <br>
+                    2. To add the element to the DOM, we can use the appendChild() method. <br>
+                    3. To remove an element from the DOM, we can use the removeChild() method.
+                </p>
+            </div>
+            
+            
+        </div>
+    </section>
+</main>
+<script src="./scripts/back-to-homepage.js"></script>
+<!-- <script>console.log("inline script");</script> -->
+</body>
+</html>
