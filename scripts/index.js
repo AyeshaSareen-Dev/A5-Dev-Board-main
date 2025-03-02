@@ -2,14 +2,14 @@
 const discoverNewDiv = document.getElementById('discover-new-div');
 
 discoverNewDiv.addEventListener('click', function(){
-    window.location.href = "/";
+    window.location.href = "https://ayeshasareen-dev.github.io/A5-Dev-Board-main/blog.html";
 });
 
 const buttons = document.querySelectorAll('.completed-btn');
 const activityLog = document.getElementById('activity-log');
 const tasksToDo = document.getElementById('tasks-to-do');
 const tasksCompleted = document.getElementById('tasks-completed');
-const date = new Date();
+
 
 let clickedButtons = 0;
 
@@ -26,7 +26,7 @@ buttons.forEach((button, index) => {
         tasksToDo.innerText = (parseInt(tasksToDo.innerText) - 1);
         tasksCompleted.innerText = (parseInt(tasksCompleted.innerText) + 1);
         const cardHeading = event.target.parentNode.parentNode.querySelector('.heading').innerText;
-        const time = formatTime(date);
+        const time = formatTime(new Date());
         const div = document.createElement('div');
         div.classList.add('bg-slate-100', 'p-4', 'rounded-2xl', 'activity-log-card');
         div.innerHTML = `<p>You have Completed the ${cardHeading} at ${time}</p>`;
