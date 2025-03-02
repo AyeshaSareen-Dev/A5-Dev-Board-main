@@ -1,4 +1,4 @@
-// import "./theme.js";
+
 const discoverNewDiv = document.getElementById('discover-new-div');
 
 discoverNewDiv.addEventListener('click', function(){
